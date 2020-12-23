@@ -1,46 +1,44 @@
-// import React from 'react';
-// import { Switch, Route } from 'react-router-dom';
-// import AppBar from './components/AppBar/AppBar';
-// import Container from './components/Container/Container';
-// import HomePage from './views/HomePage/HomePage';
-// import MoviesPage from './views/MoviesPage/MoviesPage';
-// import MovieDetailsPage from './views/MovieDetailsPage/MovieDetailsPage';
-// import Cast from './views/Cast/Cast';
-// import Reviews from './views/Reviews/Reviews';
-// import NotFoundView from './views/NotFoundView';
+import { Switch, Route } from 'react-router-dom';
+import AppBar from './components/AppBar/AppBar';
+import Container from './components/Container/Container';
+import HomePage from './views/HomePage/HomePage';
+import MoviesPage from './views/MoviesPage/MoviesPage';
+import MovieDetailsPage from './views/MovieDetailsPage/MovieDetailsPage';
+import Cast from './views/Cast/Cast';
+import Reviews from './views/Reviews/Reviews';
+import NotFoundView from './views/NotFoundView';
 
 function App() {
-  return <></>;
-  // (
-  //   <Container>
-  //     <AppBar />
-  //     <Switch>
-  //       <Route path="/" exact>
-  //         <HomePage />
-  //       </Route>
+  return (
+    <Container>
+      <AppBar />
+      {/* <Switch>
+        <Route path="/" exact>
+          <HomePage />
+        </Route>
 
-  //       <Route path="/movies">
-  //         <MoviesPage />
-  //       </Route>
+        <Route path="/movies">
+          <MoviesPage />
+        </Route>
 
-  //       <Route path="/movies/:movieId" exact>
-  //         <MovieDetailsPage />
-  //       </Route>
+        <Route path="/movies/:movieId" exact>
+          <MovieDetailsPage />
+        </Route>
 
-  //       <Route path="/movies/:movieId/cast">
-  //         <Cast />
-  //       </Route>
+        <Route path="/movies/:movieId/cast">
+          <Cast />
+        </Route>
 
-  //       <Route path="/movies/:movieId/reviews">
-  //         <Reviews />
-  //       </Route>
+        <Route path="/movies/:movieId/reviews">
+          <Reviews />
+        </Route>
 
-  //       <Route>
-  //         <NotFoundView />
-  //       </Route>
-  //     </Switch>
-  //   </Container>
-  // );
+        <Route>
+          <NotFoundView />
+        </Route>
+      </Switch> */}
+    </Container>
+  );
 }
 
 export default App;
