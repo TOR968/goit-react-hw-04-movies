@@ -9,24 +9,24 @@ const Navigation = () => (
       className={styles.link}
       activeClassName={styles.activeLink}
     >
-      Главная
+      Home
     </NavLink>
 
     <NavLink
-      to="/authors"
+      to="/movies"
       className={styles.link}
       activeClassName={styles.activeLink}
     >
-      Авторы
+      Movies
     </NavLink>
 
-    <NavLink
+    {/* <NavLink
       to="/books"
       className={styles.link}
       activeClassName={styles.activeLink}
     >
       Книги
-    </NavLink>
+    </NavLink> */}
   </nav>
 );
 
