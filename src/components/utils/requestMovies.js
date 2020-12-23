@@ -34,5 +34,5 @@ export const getMovieReviews = movieId => {
   );
 };
 
-// export const posterUrl = 'https://image.tmdb.org/t/p/w500';
+export const posterUrl = 'https://image.tmdb.org/t/p/w500';
 // export const profileUrl = 'http://image.tmdb.org/t/p/w185';
