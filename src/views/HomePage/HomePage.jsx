@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import PageHeading from '../../components/PageHeading/PageHeading';
 
 import { getDailyTrends } from '../../components/utils/requestMovies';
 import { Link } from 'react-router-dom';
@@ -23,7 +24,7 @@ function HomePage() {
 
   return (
     <>
-      <h1 className={styles.title}>Trending today</h1>
+      <PageHeading text={'Trending today'} />
       {error && <p>something gone wrong</p>}
       {!!movies.length && (
         <ul className={styles.list}>
