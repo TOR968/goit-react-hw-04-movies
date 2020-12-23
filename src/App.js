@@ -2,20 +2,17 @@ import { Switch, Route } from 'react-router-dom';
 import AppBar from './components/AppBar/AppBar';
 import Container from './components/Container/Container';
 import HomePage from './views/HomePage/HomePage';
-// import MoviesPage from './views/MoviesPage/MoviesPage';
+import MoviesPage from './views/MoviesPage/MoviesPage';
 // import MovieDetailsPage from './views/MovieDetailsPage/MovieDetailsPage';
 // import Cast from './views/Cast/Cast';
 // import Reviews from './views/Reviews/Reviews';
-// import NotFoundView from './views/NotFoundView';
+import NotFoundView from './views/NotFoundView';
 
 function App() {
   return (
     <Container>
       <AppBar />
-      <Route path="/" exact>
-        <HomePage />
-      </Route>
-      {/* <Switch>
+      <Switch>
         <Route path="/" exact>
           <HomePage />
         </Route>
@@ -24,22 +21,22 @@ function App() {
           <MoviesPage />
         </Route>
 
-        <Route path="/movies/:movieId" exact>
+        {/* <Route path="/movies/:movieId" exact>
           <MovieDetailsPage />
-        </Route>
+        </Route> */}
 
-        <Route path="/movies/:movieId/cast">
+        {/* <Route path="/movies/:movieId/cast">
           <Cast />
-        </Route>
+        </Route> */}
 
-        <Route path="/movies/:movieId/reviews">
+        {/* <Route path="/movies/:movieId/reviews">
           <Reviews />
-        </Route>
+        </Route> */}
 
         <Route>
           <NotFoundView />
         </Route>
-      </Switch> */}
+      </Switch>
     </Container>
   );
 }
