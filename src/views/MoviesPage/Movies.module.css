@@ -1,0 +1,17 @@
+.searchForm input {
+  width: 400px;
+  height: 20px;
+}
+
+.searchForm button {
+  height: 26px;
+  width: 70px;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
