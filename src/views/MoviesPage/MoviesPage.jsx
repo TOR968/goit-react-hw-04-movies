@@ -8,9 +8,9 @@ import Loader from 'react-loader-spinner';
 import PageHeading from '../../components/PageHeading/PageHeading';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
-// const MovieDetailsPage = lazy(() =>
-//   import("../MovieDetailsPage/MovieDetailsPage")
-// );
+const MovieDetailsPage = lazy(() =>
+  import('../MovieDetailsPage/MovieDetailsPage'),
+);
 
 function Movies() {
   const [query, setQuery] = useState('');
@@ -45,7 +45,7 @@ function Movies() {
   return (
     <Suspense fallback={<Loader type="TailSpin" color="#red" />}>
       <Switch>
-        {/* <Route path="/movies/:movieId" component={MovieDetailsPage} /> */}
+        <Route path="/movies/:movieId" component={MovieDetailsPage} />
         <Route
           exact
           path="/movies"
