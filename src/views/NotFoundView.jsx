@@ -1,3 +1,5 @@
+import PageHeading from '../components/PageHeading/PageHeading';
+
 export default function NotFoundView() {
-  return <h1>404 Страница не найдена</h1>;
+  return <PageHeading cls={'err'} text={'404 Страница не найдена'} />;
 }

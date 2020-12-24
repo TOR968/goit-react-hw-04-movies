@@ -48,8 +48,11 @@ function MovieDetailsPage(props) {
 
   return (
     <>
-      <button onClick={goBackHandler}>&#8592; Go back</button>
-      {error && <PageHeading text={'something gone wrong'} />}
+      <PageHeading cls={'title'} text={`${title || name}`} />
+      <button className={styles.btn} onClick={goBackHandler}>
+        &#8592; Go back
+      </button>
+      {error && <PageHeading cls={'err'} text={'something gone wrong'} />}
       {movieInfo.genres && (
         <>
           <article className={styles.movieCard}>

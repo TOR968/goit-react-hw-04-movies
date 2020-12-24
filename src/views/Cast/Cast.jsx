@@ -16,7 +16,7 @@ function Cast(props) {
         const { id, character, name, profile_path } = cast;
 
         return (
-          <li key={id}>
+          <li className={styles.list} key={id}>
             {(profile_path && (
               <img
                 src={`${profileUrl}${profile_path}`}

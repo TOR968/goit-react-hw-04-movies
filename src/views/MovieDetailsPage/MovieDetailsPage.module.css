@@ -42,3 +42,16 @@
 .link {
   color: blue;
 }
+
+.btn {
+  height: 40px;
+  color: white;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #606dbc,
+    #606dbc 15px,
+    #465298 15px,
+    #465298 30px
+  );
+  border-radius: 5px;
+}

@@ -24,7 +24,7 @@ function HomePage() {
 
   return (
     <>
-      <PageHeading text={'Trending today'} />
+      <PageHeading cls={'title'} text={'Trending today'} />
       {error && <p>something gone wrong</p>}
       {!!movies.length && (
         <ul className={styles.list}>

@@ -51,7 +51,7 @@ function Movies() {
           path="/movies"
           render={() => (
             <>
-              <PageHeading text={'Search'} />
+              <PageHeading cls={'title'} text={'Search'} />
               <form onSubmit={submitHandler} className={styles.searchForm}>
                 <input
                   placeholder="enter movie"
