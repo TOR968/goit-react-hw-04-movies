@@ -1,13 +1,6 @@
 import KEY from './key';
 import axios from 'axios';
 
-// const get = async () => {
-//   const { data } = await axios.get(
-//     `https://api.themoviedb.org/3/movie/550?api_key=${KEY}`,
-//   );
-//   return data;
-// };
-
 const URL = 'https://api.themoviedb.org/3/';
 
 export const getDailyTrends = () => {
@@ -35,4 +28,4 @@ export const getMovieReviews = movieId => {
 };
 
 export const posterUrl = 'https://image.tmdb.org/t/p/w500';
-// export const profileUrl = 'http://image.tmdb.org/t/p/w185';
+export const profileUrl = 'http://image.tmdb.org/t/p/w185';

@@ -21,18 +21,6 @@ function App() {
           <MoviesPage />
         </Route>
 
-        {/* <Route path="/movies/:movieId" exact>
-          <MovieDetailsPage />
-        </Route> */}
-
-        {/* <Route path="/movies/:movieId/cast">
-          <Cast />
-        </Route> */}
-
-        {/* <Route path="/movies/:movieId/reviews">
-          <Reviews />
-        </Route> */}
-
         <Route>
           <NotFoundView />
         </Route>

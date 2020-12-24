@@ -8,12 +8,10 @@ import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import PageHeading from '../../components/PageHeading/PageHeading';
 
-// const Cast = lazy(() =>
-//   import("../../components/Cast/Cast" /* webpackChunkName: "Cast" */)
-// );
-// const Reviews = lazy(() =>
-//   import("../../components/Reviews/Reviews" /* webpackChunkName: "Reviews" */)
-// );
+const Cast = lazy(() => import('../Cast/Cast' /* webpackChunkName: "Cast" */));
+const Reviews = lazy(() =>
+  import('../Reviews/Reviews' /* webpackChunkName: "Reviews" */),
+);
 
 function MovieDetailsPage(props) {
   const [movieInfo, setMovieInfo] = useState({});
@@ -79,7 +77,7 @@ function MovieDetailsPage(props) {
           </article>
           <section className={styles.additionalInfo}>
             <p>Additional Information</p>
-            {/* <ul className={styles.adInfoList}>
+            <ul className={styles.adInfoList}>
               <li>
                 <Link
                   to={{
@@ -106,8 +104,8 @@ function MovieDetailsPage(props) {
                   Reviews
                 </Link>
               </li>
-            </ul> */}
-            {/* <Suspense fallback={<Loader type="TailSpin" color="#red" />}>
+            </ul>
+            <Suspense fallback={<Loader type="TailSpin" color="#red" />}>
               <Switch>
                 <Route path={`${props.match.path}/cast`} component={Cast} />
                 <Route
@@ -115,7 +113,7 @@ function MovieDetailsPage(props) {
                   component={Reviews}
                 />
               </Switch>
-            </Suspense> */}
+            </Suspense>
           </section>
         </>
       )}
